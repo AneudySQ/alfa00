@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cards.css';
-import CardItem from './CardItem';
+import Carditem from './Carditem';
 
 function Cards() {
   return (
@@ -11,8 +11,8 @@ function Cards() {
              <div className='cards_container'>
                  <div className='cards__wrapper'>
                      <ul className='cards_items'>
-                         <CardItem />
-                     </ul>
+                          <Carditem />
+                      </ul>
                  </div>
              </div>
     </div>
