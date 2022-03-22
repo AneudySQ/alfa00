@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css';
 import { Button } from './Button';
-import './HeroSection.css';
+import '../scss/app.scss';
 
 function HeroSection() {
     return (
