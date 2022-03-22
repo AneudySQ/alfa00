@@ -39,3 +39,191 @@
     transition: all 0.3s ease-out;
 
 }
+
+
+/*-------- 1.2 Buttons --------*/
+a.btn_1, .btn_1{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color:#fff;
+	background: #85c99d;
+	cursor: pointer;
+	padding: 10px 20px;
+	outline: none;
+	font-size:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform:uppercase;
+	font-weight:600;
+	display:inline-block;
+	text-align:center;
+}
+a.btn_1:hover, .btn_1:hover{
+	background:#333;
+}
+a.btn_full, .btn_full{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color:#fff;
+	width:100%;
+	background: #85c99d;
+	cursor: pointer;
+	padding: 12px 20px;
+	outline: none;
+	font-size:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform:uppercase;
+	font-weight:bold;
+	display:block;
+	text-align:center;
+	margin-bottom:5px;
+}
+a.btn_full:hover, .btn_full:hover{
+	background:#333;
+}
+a.btn_1.medium, .btn_1.medium{
+	padding: 10px 20px;
+	font-size:14px;
+	text-transform:none;
+}
+a.btn_map{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color:#fff;
+	background:#555;
+	cursor: pointer;
+	padding: 10px 20px;
+	display: inline-block;
+	outline: none;
+	font-size:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform:uppercase;
+	font-weight:bold;
+	display:block;
+	text-align:center;
+	margin-bottom:25px;
+}
+a.btn_map:hover{
+	background:#333;
+}
+a.btn_side{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color:#fff;
+	background:#555;
+	cursor: pointer;
+	padding: 10px 20px;
+	display: inline-block;
+	outline: none;
+	font-size:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform:uppercase;
+	font-weight:bold;
+	display:block;
+	text-align:center;
+	margin-bottom:25px;
+}
+a.btn_side:hover{
+	background:#333;
+	color:#fff;
+}
+a.btn_full_outline, .btn_full_outline{
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color:#85c99d;
+	background:none;
+	width:100%;
+	border:2px solid #85c99d;
+	cursor: pointer;
+	padding: 10px 20px;
+	display: inline-block;
+	outline: none;
+	font-size:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform:uppercase;
+	font-weight:bold;
+	display:block;
+	text-align:center;
+}
+a.btn_full_outline:hover, .btn_full_outline:hover{
+	border:2px solid #333;
+	color:#333;
+}
+a.button_intro, .button_intro  {
+	border: none;
+	font-weight:normal;
+	font-style:normal;
+	color:#fff !important;
+	background: #85c99d;
+	cursor: pointer;
+	padding: 12px 25px;
+	display: inline-block;
+	outline: none;
+	font-size:13px;
+	text-align:center;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform:uppercase;
+	min-width:110px;
+	font-weight:bold;
+}
+a.button_intro:hover, .button_intro:hover {
+	background: #fff;
+	color:#85c99d !important;
+}
+a.button_intro.outilne, .button_intro.outline  {
+	border: 2px solid #fff;
+	color:#fff;
+	background: none;
+	padding: 10px 23px;
+}
+#cart_box a.btn_full, #cart_box .btn_full{
+	background: #ec008c;
+	font-size:15px;
+}
+#cart_box a.btn_full:hover, #cart_box .btn_full:hover{
+	background: #333;
+}
+#cart_box a.btn_full_outline{
+	color:#ec008c;
+	background:none;
+	border:2px solid #ec008c;
+}
+#cart_box a.btn_full_outline:hover{
+	color:#333;
+	background:none;
+	border:2px solid #333;
+}
