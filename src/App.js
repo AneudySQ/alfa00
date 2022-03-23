@@ -1,8 +1,8 @@
-import './scss/app.scss';
 
 import Navbar from './componets/Navbar';
 import {BrowserRouter as Router,  Routes, Route} from 'react-router-dom';
 import Home from './componets/Pages/Home';
+
 
 
 function App() {
