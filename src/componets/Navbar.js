@@ -1,79 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '../images/img/logo.png'
 
-function Navbar() {
-    const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+const Navbar = () => {
 
-    const showButton = () => {
-        if (window.innerWidth <= 960) {
-            setButton(false);
-        } else {
-            setButton(true);
-        }
-    };
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
 
-    useEffect(() => {
-        showButton();
-    }, []);
-
-    window.addEventListener('resize', showButton);
+    const closeMenu = () => setClick(false)
 
     return (
-        <>
-            <nav className='navbar container-fluid '>
-                <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        ANEUDY
-                        <i class='fab fa-typo3' />
-                    </Link>
-                    <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                    </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item  '>
-                            <Link to='/' className='nav-links ' onClick={closeMobileMenu}>
-                                Home
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/Servicios'
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Services
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/products'
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Products
-                            </Link>
-                        </li>
+        <div className='header'>
+            <nav className='navbar'>
+                <a href='/' className='logo'>
+                    <img src={logo} alt='logo' />
+                </a>
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
-                        <li>
-                            <Link
-                                to='/sign-up'
-                                className='nav-links-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                Sign Up
-                            </Link>
-                        </li>
-                    </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className='nav-item'>
+                        <a href='/' onClick={closeMenu}>Home</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#about' onClick={closeMenu}>About</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#testimonials' onClick={closeMenu}>Testimonials</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#demo' onClick={closeMenu}>Demo</a>
+                    </li>
+                </ul>
             </nav>
-        </>
-    );
+        </div>
+    )
 }
 
-export default Navbar;
+export default Navbar
