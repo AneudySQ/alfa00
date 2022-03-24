@@ -25,7 +25,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className='navbar container-fluid '>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         ANEUDY
@@ -42,7 +42,7 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/services'
+                                to='/Servicios'
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
