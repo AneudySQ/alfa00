@@ -1,17 +1,32 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../images/img/logo.png'
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 const Navbar = () => {
 
+    //setting mobile nav
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
+    //cambio de color
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+
+
+    //clset menu on click
     const closeMenu = () => setClick(false)
 
     return (
-        <div className='header'>
+        <div className={color ? 'header header-bg' : 'header'}>
             <nav className='navbar'>
                 <a href='/' className='logo'>
                     <img src={logo} alt='logo' />
