@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../Footer';
-import HeroSection from '../HeroSection';
 import Toprestaurantes from '../Toprestaurantes';
+import VideoPortada from '../VideoPortada';
 
 function Home() {
     return (
         <>
-            <HeroSection />
+            <VideoPortada />
             <Toprestaurantes />
             <Footer />
         </>

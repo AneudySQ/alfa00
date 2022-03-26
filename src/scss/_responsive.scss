@@ -130,9 +130,9 @@
 	   left:15px;
 	   top:12px;
 	   } 
-	.styled-select-cat::-ms-expand, {display: none;}
+/* 	.styled-select-cat::-ms-expand, {display: none;}
 	.styled-select-cat select:focus { outline:none;}
-	
+ */	
 	.margin_60 {padding-top:30px; padding-bottom:30px;}
 	.margin_60_35 {padding-top:30px; padding-bottom:10px;}
 	#sub_content #thumb{ display:none;}
@@ -159,7 +159,6 @@
 	.col-md-4.plan:last-child {margin-right: 0px;margin-left: 0px;border-width: 1px 1px 1px 1px;-moz-box-sizing: border-box;box-sizing: border-box;}
 	.plan-tall + .plan {border-left: 1px;border: solid #dddddd;}
 	.plan-tall {margin-right: 0;}
-}
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
@@ -190,4 +189,5 @@
 	#sub_content{font-size:12px;}
 	#sub_content h1{font-size:16px;}
 
+}
 }

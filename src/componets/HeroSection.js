@@ -3,8 +3,8 @@ import BuscadorHome from './BuscadorHome';
 
 function HeroSection() {
     return (
-        <div className='hero-container sub_content'>
-        <video src='/videos/video-1.mp4' autoPlay loop muted />           
+        <div className='hero-container'>
+        <video src='/videos/video-1.mp4' className='video' autoPlay loop muted />           
             <div className='hero-btns'>
                 <BuscadorHome />
             </div>

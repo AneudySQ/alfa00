@@ -145,70 +145,7 @@ header.sticky{
 	text-decoration:underline;
 }
 
-/* Footer  */
-footer{
-	background-color:#242222;
-	border-top: 1px solid #ff701d;
-	padding:20px 0;
-}
-footer h3{
-	font-size:16px;
-	font-weight:600;
-	color:#ff701d;
 
-}
-footer a{
-	color:#fff;
-}
-footer a:hover{
-	color:#ec008c;
-}
-footer ul{
-	margin:0;
-	padding: 0 0 20px 0;
-	list-style:none;
-}
-footer .btn_1{
-	text-transform:none;
-	padding:8px 15px;
-	background:#555;
-}
-#social_footer{
-	text-align:center;
-	border-top:1px solid #ededed;
-	padding-top:30px;
-	margin-top:30px;
-}
-#social_footer p{
-	font-size:12px;
-	color:#8c8c8c;
-}
-#social_footer ul{
-	margin:0;
-	padding:0 0 10px 0;
-	text-align:center;
-}
-#social_footer ul li{
-	display:inline-block;
-	margin:0 5px 10px 5px;
-}
-#social_footer ul li a{
-	color:#666;
-	text-align:center;
-	line-height:34px;
-	display:block;
-	font-size:16px;
-	width:35px;
-	height:35px;
-	background-color:#f2f2f2;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-}
-#social_footer ul li a:hover{
-	background:#fff;
-	color:#111;
-}
 a#promote{
 	display:inline-block;
 	position:relative;
@@ -290,86 +227,6 @@ footer .styled-select {
 /* 2.  CONTENT  */
 
 /* 2.1 Home  */
-#custom-search-input {
-        margin:0;
-        top: 10px;
-        padding: 0;
-		width:650px;
-		margin:auto;
-		position:relative;
-}
-#custom-search-input .search-query {
-		width:650px;
-		padding:15px 30px;
-		border:0;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		border-radius: 30px;
-		-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-		font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight:600;
-		color:#444;
-}
-#custom-search-input input.btn_search{
-	position:absolute;
-	right:20px;
-	top:13px;
-	border:0;
-	width:25px;
-	height:25px;
- 	background: url(/./images/img/search.svg) no-repeat center right;
- 	cursor:pointer;
-}
-#custom-search-input input.btn_search:focus, #custom-search-input .search-query:focus{outline:none;}
-#custom-search-input input.btn_search:focus, #custom-search-input .search-query:focus{outline:none;}
-#count{
-	background-color:rgba(0,0,0,0.25);
-	width:100%;
-	position:absolute;
-	bottom:0;
-	left:0;
-	padding:15px 0;
-	color:#fff;
-	font-size:18px;
-	z-index:99;
-	border-top: 1px solid rgba(255,255,255,0.15)
-}
-#count ul{
-	list-style:none;
-	padding:0;
-	margin:0;
-	text-align:center;
-}
-#count ul li{
-	display:inline-block;
-	text-align:center;
-	margin:0 10px;
-	padding-left:20px;
-/* 	background:url(/src/images/img/dots_vert.png) center left no-repeat;
- */}
-#count ul li:first-child{
-	margin-left:0;
-	padding-left:0;
-	background:none;
-}
-#count ul li:last-child{
-	margin-right:0;
-}
-#count .number{
-	width:auto;
-	display:inline-block;
-	margin-right:5px;
-	font-weight:600;
-	text-align:right;
-	font-size:24px;
-}
-.header-video {
-  position: relative;
-  overflow: hidden;
-   background: #000;
-}
 #hero_video {
 	position: relative;
     background-size: cover;
@@ -390,7 +247,7 @@ footer .styled-select {
 #hero_video > div h1{
 	margin-top:-60px;
 }
-video {
+/* video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -398,14 +255,15 @@ video {
   right: 0;
   opacity:0.5;
 }
-iframe {
+ */
+ iframe {
   height: 100%;
   width: 100%;
 }
-video {
+/* video {
   width: 100%;
 }
-.teaser-video {
+ */.teaser-video {
   width: 100%;
   height: auto; 
 }
@@ -848,34 +706,6 @@ ul#cat_nav li a{
 ul#cat_nav li a:hover, ul#cat_nav li a.active{
 	background:#f9f9f9;
 	color:#111;
-}
-#sub_content{
-	 display: table-cell;
-  	padding:0 15%;
-    vertical-align: middle;
-	text-align:center;
-	font-size:16px;
-}
-#sub_content #thumb{
-	width:130px;
-	height:130px;
-	overflow:hidden;
-	text-align:center;
-	padding-top:5px;
-	box-sizing: border-box;
-	margin:auto;
-	margin-bottom:15px;
-	background-color:#fff;
-}
-#sub_content #thumb img{
-	width:120px;
-	height:auto;
-}
-#sub_content h1{
-	margin:0 0 10px 0;
-	font-size:60px;
-	font-weight:300;
-	color:#fff;
 }
 .rating{
 	color:#fff;

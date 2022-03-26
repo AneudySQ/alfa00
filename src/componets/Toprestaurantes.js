@@ -15,10 +15,8 @@ function Toprestaurantes() {
                         <div className="col-lg-6">
                             <TopCard />
                             <TopCard />
-                            <TopCard />
                         </div>
                         <div className="col-lg-6">
-                            <TopCard />
                             <TopCard />
                             <TopCard />
                         </div>

@@ -7,7 +7,7 @@ function TopCard() {
               <div className="ribbon_1">Popular</div>
               <div className="desc">
                   <div className="thumb_strip">
-                      <img src=".\images\img\thumb_restaurant.jpg" alt="" />
+                      <img src="../images/img/thumb_restaurant.jpg" alt="" />
                   </div>
                   <div className="rating">
                       <i className="icon_star voted"></i><i className="icon_star voted"></i><i className="icon_star voted"></i><i className="icon_star voted"></i><i className="icon_star"></i>

@@ -1,0 +1,69 @@
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.hero-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+ */
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+}
+
+#sub_content {
+  display: table-cell;
+  padding: 0 15%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+}
+#sub_content #thumb {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+#sub_content #thumb img {
+  width: 120px;
+  height: auto;
+}
+#sub_content h1 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+
+//Pantallas muy grandes  (desktops de más de 1200px de ancho)
+//No hace falta media-query porque será nuestro diseño por defecto
+
+//Pantallas grandes (desktops de menos de 1200px)
