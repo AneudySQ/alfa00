@@ -1,6 +1,7 @@
 
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Home from './componets/Pages/Home';
+import RestaurantList from './componets/Pages/RestaurantList';
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
           
-        <Route path="Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/RestaurantList" element={<RestaurantList />} />
         <Route path="*" element={<Navigate replace to="/" />} />
 
       </Routes>
