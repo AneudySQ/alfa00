@@ -27,7 +27,8 @@ const Navbar = () => {
     return (
         <div className={color ? 'header header-bg' : 'header'}>
             <nav className='navbar'>
-                <NavLink to='/' className='logo'>
+                <NavLink to='/'
+                    className='logo'>
                     <img src={logo} alt='logo' />
                 </NavLink >
                 <div className='hamburger' onClick={handleClick}>
@@ -37,18 +38,18 @@ const Navbar = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <NavLink to='/' style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })} 
-                        onClick={closeMenu}>Tops</NavLink >
+                        <NavLink to='/' style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
+                            onClick={closeMenu}>Tops</NavLink >
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/RestaurantList'
-                        style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
-                        onClick={closeMenu}>¡Cerca de ti!</NavLink >
+                        <NavLink to='/GrildList'
+                            style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
+                            onClick={closeMenu}>¡Cerca de ti!</NavLink >
                     </li>
                     <li className='nav-item'>
                         <NavLink to='/Servicios'
-                        style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
-                        onClick={closeMenu}>Iniciar Secion</NavLink >
+                            style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
+                            onClick={closeMenu}>Iniciar Secion</NavLink >
                     </li>
                 </ul>
             </nav>

@@ -2,7 +2,8 @@
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Navbar from './componets/Navbar';
 import Home from './componets/Pages/Home';
-import RestaurantList from './componets/Pages/RestaurantList';
+import GrildList from './componets/Pages/GrildList';
+import Footer from './componets/Footer';
 
 function App() {
   return (
@@ -12,9 +13,11 @@ function App() {
 
       <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/RestaurantList" element={<RestaurantList />} />
+          <Route path="/GrildList" element={<GrildList />} />
           <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
+      
+      <Footer />
     </BrowserRouter>
 
     </>
