@@ -1,18 +1,19 @@
 
-import Navbar from './componets/Navbar';
-import {BrowserRouter as Router,  Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Home from './componets/Pages/Home';
-
 
 function App() {
   return (
     <>
-    <Router>
-        <Navbar />
-        < Routes>
-          <Route path="/" element={<Home />} />
-        </ Routes>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+          
+        <Route path="Home" element={<Home />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
+
+      </Routes>
+    </BrowserRouter>
+
     </>
 
   );
