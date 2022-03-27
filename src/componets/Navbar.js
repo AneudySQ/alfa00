@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../images/img/logo.png'
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -19,19 +19,17 @@ const Navbar = () => {
             setColor(false)
         }
     }
-
     window.addEventListener('scroll', changeColor)
 
 
-    //clset menu on click
     const closeMenu = () => setClick(false)
 
     return (
         <div className={color ? 'header header-bg' : 'header'}>
             <nav className='navbar'>
-                <Link to='/' className='logo'>
+                <NavLink to='/' className='logo'>
                     <img src={logo} alt='logo' />
-                </Link>
+                </NavLink >
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
@@ -39,13 +37,18 @@ const Navbar = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to='/' onClick={closeMenu}>Tops</Link>
+                        <NavLink to='/' style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })} 
+                        onClick={closeMenu}>Tops</NavLink >
                     </li>
                     <li className='nav-item'>
-                        <Link to='/RestaurantList' onClick={closeMenu}>¡Cerca de ti!</Link>
+                        <NavLink to='/RestaurantList'
+                        style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
+                        onClick={closeMenu}>¡Cerca de ti!</NavLink >
                     </li>
                     <li className='nav-item'>
-                        <Link to='#testimonials' onClick={closeMenu}>Iniciar Secion</Link>
+                        <NavLink to='/Servicios'
+                        style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
+                        onClick={closeMenu}>Iniciar Secion</NavLink >
                     </li>
                 </ul>
             </nav>
