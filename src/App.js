@@ -16,7 +16,7 @@ function App() {
           <Route path="/GrildList" element={<GrildList />} />
           <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      
+
       <Footer />
     </BrowserRouter>
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../images/img/logo.png'
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { NavLink,  } from 'react-router-dom';
+
 
 
 const Navbar = () => {
@@ -51,6 +52,8 @@ const Navbar = () => {
                             style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
                             onClick={closeMenu}>Iniciar Secion</NavLink >
                     </li>
+
+
                 </ul>
             </nav>
         </div>
