@@ -562,14 +562,14 @@ a.strip_list:hover h3{
 }
 
 .ribbon_1{
-	position:absolute;
+	position:relative;
 	text-indent:-9999px;
 	top:-5px;
 	left:-5px;
 	background:url(../images/img/ribbon_popular.png) no-repeat 0 0;
  	width:81px;
 	height:80px;
-	z-index:3;
+	z-index:1;
 }
 
 /* 2.3 Restaurant menu*/
