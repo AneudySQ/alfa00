@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer';
 import Toprestaurantes from '../Toprestaurantes';
 import VideoPortada from '../VideoPortada';
 import { Link } from 'react-router-dom';
@@ -56,10 +55,6 @@ function Home() {
 
             </div>
 
-
-
-
-            <Footer />
         </>
     );
 }
