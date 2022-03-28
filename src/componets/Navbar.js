@@ -52,6 +52,7 @@ const Navbar = () => {
                             style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
                             onClick={closeMenu}>Iniciar Secion</NavLink >
                     </li>
+                    <li><a href="#0" data-toggle="modal" data-target="#login_2">User Login</a></li>
 
                     
                     </ul>
