@@ -48,10 +48,11 @@ const Navbar = () => {
                             onClick={closeMenu}>¡Cerca de ti!</NavLink >
                     </li>
                     <li className='nav-item'>
-                        <NavLink to='/BotonPrueba'
+                        <NavLink to='/'
                             style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
-                            onClick={closeMenu}>BotonPrueba</NavLink >
+                            onClick={closeMenu}></NavLink >
                     </li>
+
 
                     
                     </ul>
