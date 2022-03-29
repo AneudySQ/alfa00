@@ -1,5 +1,7 @@
 import React from 'react'
+import BotonLoadMore from '../BotonLoadMore'
 import PortadaImagen from '../PortadaImagen'
+
 
 
 function GrildList() {
@@ -178,16 +180,17 @@ function GrildList() {
                   </div>
                 </a>
               </div>
-              <div class="col-md-6 wow zoomIn" data-wow-delay="0.4s">
+              <div class="col-md-6 wow zoomIn" data-wow-delay="0.3s">
                 <a class="strip_list grid" href="detail_page.html">
+                  <div class="ribbon_1">Popular</div>
                   <div class="desc">
                     <div class="thumb_strip">
-                      <img src="img/thumb_restaurant_4.jpg" alt=""/>
+                      <img src="img/thumb_restaurant_3.jpg" alt=""/>
                     </div>
                     <div class="rating">
                       <i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
                     </div>
-                    <h3>Sushi Gold</h3>
+                    <h3>Japan Food</h3>
                     <div class="type">
                       Sushi / Japanese
                     </div>
@@ -251,7 +254,7 @@ function GrildList() {
                 </a>
               </div>
             </div>
-            <a href="#0" class="load_more_bt wow fadeIn" data-wow-delay="0.2s">Load more...</a>
+            <BotonLoadMore />
           </div>
 
         </div>

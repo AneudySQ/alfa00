@@ -562,14 +562,14 @@ a.strip_list:hover h3{
 }
 
 .ribbon_1{
-	position:absolute;
+	position:relative;
 	text-indent:-9999px;
 	top:-5px;
 	left:-5px;
 	background:url(../images/img/ribbon_popular.png) no-repeat 0 0;
  	width:81px;
 	height:80px;
-	z-index:3;
+	z-index:1;
 }
 
 /* 2.3 Restaurant menu*/
@@ -1688,12 +1688,14 @@ a.load_more_bt{
 	display:block;
 	padding:10px;
 	text-align:center;
-	border:3px solid #fff;
+	border:2px solid rgb(219, 14, 14);
 	color:#555;
 	font-weight:600;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px;
+	border-radius: 10px;
+	width: 50%;
+	margin: auto;
 }
 a.load_more_bt:hover{
 	background-color:#fff;

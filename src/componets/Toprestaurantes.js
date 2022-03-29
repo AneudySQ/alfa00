@@ -1,5 +1,7 @@
 import React from 'react'
+import BotonLoadMore from './BotonLoadMore'
 import TopCard from './TopCard'
+
 
 
 
@@ -20,6 +22,7 @@ function Toprestaurantes() {
                             <TopCard />
                             <TopCard />
                         </div>
+                        <BotonLoadMore />
                     </div>
                 </div>
             </div>

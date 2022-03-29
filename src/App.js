@@ -5,8 +5,6 @@ import Home from './componets/Pages/Home';
 import GrildList from './componets/Pages/GrildList';
 import Footer from './componets/Footer';
 
-
-
 function App() {
 
 
