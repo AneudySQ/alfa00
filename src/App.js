@@ -1,4 +1,3 @@
-
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Navbar from './componets/Navbar';
 import Home from './componets/Pages/Home';
