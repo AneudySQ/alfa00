@@ -1,36 +1,38 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
 
-export default function App() {
+function App() {
+    const [showModal, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        <div style={{
-            display: 'block',
-            width: 700,
-            padding: 30
-        }}>
-            <h4>React-Bootstrap Modal Component</h4>
-            <Modal.Dialog>
+        <>
+            <div
+                className="d-flex align-items-center justify-content-center"
+                style={{ height: "100vh" }}
+            >
+                <Button variant="primary" onClick={handleShow}>
+                    Launch demo modal
+                </Button>
+            </div>
+            <Modal show={showModal} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>
-                        Sample Modal Heading
-                    </Modal.Title>
+                    <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
-                    <p>
-                        This is the sample text for our Modal
-                    </p>
-                </Modal.Body>
+                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary">
-                        Save changes
-                    </Button>
-                    <Button variant="secondary">
+                    <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </Button>
                 </Modal.Footer>
-            </Modal.Dialog>
-        </div>
+            </Modal>
+        </>
     );
 }
+
+export default App;
