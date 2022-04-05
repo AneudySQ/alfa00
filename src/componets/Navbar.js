@@ -6,6 +6,7 @@ import { NavLink,  } from 'react-router-dom';
 
 
 const Navbar = () => {
+    
 
     //setting mobile nav
     const [click, setClick] = useState(false)
@@ -59,7 +60,7 @@ const Navbar = () => {
                             onClick={closeMenu}></NavLink >
                     </li>
 
-
+        ,
                     
                     </ul>
             </nav>
