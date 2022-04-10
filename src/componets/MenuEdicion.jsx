@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Section2Admin() {
+function MenuEdicion() {
   return (
     <>
     				<section id="section-2">
@@ -383,4 +383,4 @@ function Section2Admin() {
   )
 }
 
-export default Section2Admin
+export default MenuEdicion

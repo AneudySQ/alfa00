@@ -3,33 +3,37 @@ import PortadaImagen from '../PortadaImagen'
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
-import Section1Admin from '../Section1Admin';
-import Section2Admin from '../Section2Admin';
-import Section3Admin from '../Section3Admin';
+import GeneralInfo from '../GeneralInfo';
+import MenuEdicion from '../MenuEdicion';
+import AjustesPerfil from '../AjustesPerfil';
 
 
 
 function Admin() {
+
   return (
     <>
-        <PortadaImagen />
+      <PortadaImagen />
 
-  <div className="container margin_60 ">
+      <div className="container margin_60 ">
 
-    <Tabs defaultActiveKey="Menu" id="uncontrolled-tab-example" className="mb-3 tabs">
-        <Tab eventKey="Main info" className='icon-profile' title="Main info">
-          <Section1Admin />
-        </Tab>
-        <Tab eventKey="Menu" className='iconos-admin '  title="Menu">
-          <Section2Admin />
-        </Tab>
-        <Tab eventKey="Settings" className='icon-profile' title="Settings" >
-          <Section3Admin />
-  </Tab>
-</Tabs>
+        <Tabs defaultActiveKey="Menu" id="uncontrolled-tab-example" className="mb-3 tabs">
+
+          <Tab eventKey="Informacion General" className='icon-profile' title="Informacion General">
+            <GeneralInfo />
+          </Tab>
+
+          <Tab eventKey="Menu" className='iconos-admin  titulo-admin ' title="Menu">
+            <MenuEdicion />
+          </Tab>
+
+          <Tab eventKey="Ajustes del Perfil" className='icon-profile' title="Ajustes del Perfil" >
+            <AjustesPerfil />
+          </Tab>
+        </Tabs>
 
 
-		</div>
+      </div>
     </>
   )
 }
