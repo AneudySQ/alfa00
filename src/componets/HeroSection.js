@@ -1,0 +1,33 @@
+import React from 'react'
+import '../App.css';
+import BuscadorHome from './BuscadorHome';
+import { Button } from './Button';
+
+function HeroSection() {
+    return (
+        <div className='hero-container' data-natural-width="1400" data-natural-height="550">
+        <video src='/videos/video-1.mp4' autoPlay loop muted />           
+            <p>What are you waiting for?</p>
+            <div className='hero-btns'>
+                <Button
+                    className='btns'
+                    buttonStyle='btn--outline'
+                    buttonSize='btn--large'
+                >
+                    GET STARTED
+                </Button>
+                <Button
+                    className='btns'
+                    buttonStyle='btn--primary'
+                    buttonSize='btn--large'
+                    onClick={console.log('hey')}
+                >
+                    WATCH TRAILER <i className='far fa-play-circle' />
+                </Button>
+                <BuscadorHome />
+            </div>
+        </div>
+    );
+}
+
+export default HeroSection;
