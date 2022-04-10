@@ -1,8 +1,8 @@
 import React from 'react'
 import PortadaImagen from '../PortadaImagen'
-import 'bootstrap/dist/css/bootstrap.css';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+
 import Section1Admin from '../Section1Admin';
 import Section2Admin from '../Section2Admin';
 import Section3Admin from '../Section3Admin';
@@ -14,16 +14,16 @@ function Admin() {
     <>
         <PortadaImagen />
 
-  <div class="container margin_60 ">
+  <div className="container margin_60 ">
 
-    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3 tabs">
-        <Tab eventKey="home" className='icon-profile' title="Main info">
+    <Tabs defaultActiveKey="Menu" id="uncontrolled-tab-example" className="mb-3 tabs">
+        <Tab eventKey="Main info" className='icon-profile' title="Main info">
           <Section1Admin />
         </Tab>
-        <Tab eventKey="profile" className='iconos-admin '  title="Menu">
+        <Tab eventKey="Menu" className='iconos-admin '  title="Menu">
           <Section2Admin />
         </Tab>
-        <Tab eventKey="contact" className='icon-profile' title="Settings" >
+        <Tab eventKey="Settings" className='icon-profile' title="Settings" >
           <Section3Admin />
   </Tab>
 </Tabs>

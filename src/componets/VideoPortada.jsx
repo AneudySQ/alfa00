@@ -4,7 +4,7 @@ import BuscadorHome from './BuscadorHome'
 function VideoPortada() {
   return (
     <div>
-          <section class="header-video" >
+          <section className="header-video" >
               <div className='hero-container '>
                   <video src='/videos/video-1.mp4' className='video' autoPlay loop muted />           
               <BuscadorHome />

@@ -4,84 +4,84 @@ function Section2Admin() {
   return (
     <>
     				<section id="section-2">
-					<div class="indent_title_in">
-						<i class="icon_document_alt"></i>
+					<div className="indent_title_in">
+						<i className="icon_document_alt"></i>
 						<h3>Edit menu list</h3>
 						<p>Partem diceret praesent mel et, vis facilis alienum antiopam ea, vim in sumo diam sonet. Illud ignota cum te, decore elaboraret nec ea. Quo ei graeci repudiare definitionem. Vim et malorum ornatus assentior, exerci elaboraret eum ut, diam meliore no mel.</p>
 					</div>
                     
-					<div class="wrapper_indent">
-						<div class="form-group">
+					<div className="wrapper_indent">
+						<div className="form-group">
 							<label>Menu Category</label>
-							<input type="text" name="menu_category" class="form-control" placeholder="EX. Starters"/>
+							<input type="text" name="menu_category" className="form-control" placeholder="EX. Starters"/>
 						</div>
 
-						<div class="menu-item-section clearfix">
+						<div className="menu-item-section clearfix">
 							<h4>Menu item #1</h4>
-							<div><a href="#0"><i class="icon_plus_alt"></i></a><a href="#0"><i class="icon_minus_alt"></i></a>
+							<div><a href="#0"><i className="icon_plus_alt"></i></a><a href="#0"><i className="icon_minus_alt"></i></a>
 							</div>
 						</div>
 
-						<div class="strip_menu_items">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="menu-item-pic dropzone">
+						<div className="strip_menu_items">
+							<div className="row">
+								<div className="col-md-3">
+									<div className="menu-item-pic dropzone">
 										<input name="file" type="file"/>
-										<div class="dz-default dz-message"><span>Click or Drop<br/>Images Here</span>
+										<div className="dz-default dz-message"><span>Click or Drop<br/>Images Here</span>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-9">
-									<div class="row">
-										<div class="col-md-8">
-											<div class="form-group">
+								<div className="col-md-9">
+									<div className="row">
+										<div className="col-md-8">
+											<div className="form-group">
 												<label>Title</label>
-												<input type="text"  name="menu_item_title" class="form-control"/>
+												<input type="text"  name="menu_item_title" className="form-control"/>
 											</div>
 										</div>
-										<div class="col-md-4">
-											<div class="form-group">
+										<div className="col-md-4">
+											<div className="form-group">
 												<label>Price</label>
-												<input type="text" name="menu_item_title_price" class="form-control"/>
+												<input type="text" name="menu_item_title_price" className="form-control"/>
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<label>Short description</label>
-										<input type="text" name="menu_item_description" class="form-control"/>
+										<input type="text" name="menu_item_description" className="form-control"/>
 									</div>
 
-									<div class="form-group">
+									<div className="form-group">
 										<label>Item options</label>
-										<div class="table-responsive">
-											<table class="table table-striped edit-options">
+										<div className="table-responsive">
+											<table className="table table-striped edit-options">
 												<tbody>
 													<tr>
-														<td className="admin_width_20">
-															<input type="text" class="form-control" placeholder="+ $3.50"/>
+														<td classNameName="admin_width_20">
+															<input type="text" className="form-control" placeholder="+ $3.50"/>
 														</td>
-														<td className="admin_width_50">
-															<input type="text" class="form-control" placeholder="Ex. Medium"/>
+														<td classNameName="admin_width_50">
+															<input type="text" className="form-control" placeholder="Ex. Medium"/>
 														</td>
-														<td className="admin_width_30">
+														<td classNameName="admin_width_30">
 															<label>
-																<input type="radio" name="option_item_settings_1" checked class="icheck" value="checkbox"/>Checkbox</label>
-															<label class="margin_left">
-																<input type="radio" name="option_item_settings_1" class="icheck" value="radio"/>Radio</label>
+																<input type="radio" name="option_item_settings_1" checked className="icheck" value="checkbox"/>Checkbox</label>
+															<label className="margin_left">
+																<input type="radio" name="option_item_settings_1" className="icheck" value="radio"/>Radio</label>
 														</td>
 													</tr>
 													<tr>
-														<td className="admin_width_20">
-															<input type="text" class="form-control" placeholder="+ $5.50"/>
+														<td classNameName="admin_width_20">
+															<input type="text" className="form-control" placeholder="+ $5.50"/>
 														</td>
-														<td className="admin_width_50">
-															<input type="text" class="form-control" placeholder="Ex. Large"/>
+														<td classNameName="admin_width_50">
+															<input type="text" className="form-control" placeholder="Ex. Large"/>
 														</td>
-														<td className="admin_width_30">
+														<td classNameName="admin_width_30">
 															<label>
-																<input type="radio" name="option_item_settings_2" class="icheck" value="checkbox"/>Checkbox</label>
-															<label class="margin_left">
-																<input type="radio" name="option_item_settings_2" class="icheck" value="radio" checked/>Radio</label>
+																<input type="radio" name="option_item_settings_2" className="icheck" value="checkbox"/>Checkbox</label>
+															<label className="margin_left">
+																<input type="radio" name="option_item_settings_2" className="icheck" value="radio" checked/>Radio</label>
 														</td>
 													</tr>
 												</tbody>
@@ -89,37 +89,37 @@ function Section2Admin() {
 										</div>
 									</div>
 
-									<div class="form-group">
+									<div className="form-group">
 										<label>Item ingredients</label>
-                                        <div class="table-responsive">
-										<table class="table table-striped notifications">
+                                        <div className="table-responsive">
+										<table className="table table-striped notifications">
 											<tbody>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $2.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $2.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Extra tomato"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Extra tomato"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_3" checked class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_3" class="icheck" value="radio"/>Radio</label>
+															<input type="radio" name="option_item_settings_3" checked className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_3" className="icheck" value="radio"/>Radio</label>
 													</td>
 												</tr>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $5.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $5.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Extra Pepper"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Extra Pepper"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_4" class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_4" class="icheck" value="radio" checked/>Radio</label>
+															<input type="radio" name="option_item_settings_4" className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_4" className="icheck" value="radio" checked/>Radio</label>
 													</td>
 												</tr>
 											</tbody>
@@ -132,72 +132,72 @@ function Section2Admin() {
 
 
 
-						<div class="menu-item-section clearfix">
+						<div className="menu-item-section clearfix">
 							<h4>Menu item #2</h4>
-							<div><a href="#0"><i class="icon_plus_alt"></i></a><a href="#0"><i class="icon_minus_alt"></i></a>
+							<div><a href="#0"><i className="icon_plus_alt"></i></a><a href="#0"><i className="icon_minus_alt"></i></a>
 							</div>
 						</div>
 
-						<div class="strip_menu_items">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="menu-item-pic dropzone">
+						<div className="strip_menu_items">
+							<div className="row">
+								<div className="col-md-3">
+									<div className="menu-item-pic dropzone">
 										<input name="file" type="file"/>
-										<div class="dz-default dz-message"><span>Click or Drop<br/>Images Here</span>
+										<div className="dz-default dz-message"><span>Click or Drop<br/>Images Here</span>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-9">
-									<div class="row">
-										<div class="col-md-8">
-											<div class="form-group">
+								<div className="col-md-9">
+									<div className="row">
+										<div className="col-md-8">
+											<div className="form-group">
 												<label>Title</label>
-												<input type="text" name="menu_item_title" class="form-control"/>
+												<input type="text" name="menu_item_title" className="form-control"/>
 											</div>
 										</div>
-										<div class="col-md-4">
-											<div class="form-group">
+										<div className="col-md-4">
+											<div className="form-group">
 												<label>Price</label>
-												<input type="text" name="menu_item_title_price" class="form-control"/>
+												<input type="text" name="menu_item_title_price" className="form-control"/>
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<label>Short description</label>
-										<input type="text" name="menu_item_description" class="form-control"/>
+										<input type="text" name="menu_item_description" className="form-control"/>
 									</div>
 
-									<div class="form-group">
+									<div className="form-group">
 										<label>Item options</label>
-                                        <div class="table-responsive">
-										<table class="table table-striped notifications">
+                                        <div className="table-responsive">
+										<table className="table table-striped notifications">
 											<tbody>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $3.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $3.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Medium"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Medium"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_5" checked class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_5" class="icheck" value="radio"/>Radio</label>
+															<input type="radio" name="option_item_settings_5" checked className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_5" className="icheck" value="radio"/>Radio</label>
 													</td>
 												</tr>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $5.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $5.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Large"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Large"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_7" class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_7" class="icheck" value="radio" checked/>Radio</label>
+															<input type="radio" name="option_item_settings_7" className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_7" className="icheck" value="radio" checked/>Radio</label>
 													</td>
 												</tr>
 											</tbody>
@@ -205,37 +205,37 @@ function Section2Admin() {
                                         </div>
 									</div>
 
-									<div class="form-group">
+									<div className="form-group">
 										<label>Item ingredients</label>
-                                        <div class="table-responsive">
-										<table class="table table-striped notifications">
+                                        <div className="table-responsive">
+										<table className="table table-striped notifications">
 											<tbody>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $2.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $2.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Extra tomato"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Extra tomato"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_8" checked class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_8" class="icheck" value="radio"/>Radio</label>
+															<input type="radio" name="option_item_settings_8" checked className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_8" className="icheck" value="radio"/>Radio</label>
 													</td>
 												</tr>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $5.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $5.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Extra Pepper"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Extra Pepper"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_9" class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_9" class="icheck" value="radio" checked/>Radio</label>
+															<input type="radio" name="option_item_settings_9" className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_9" className="icheck" value="radio" checked/>Radio</label>
 													</td>
 												</tr>
 											</tbody>
@@ -247,80 +247,80 @@ function Section2Admin() {
 						</div>
 					</div>
 
-					<hr class="styled_2"/>
+					<hr className="styled_2"/>
                     
-					<div class="wrapper_indent">
-						<div class="form-group">
+					<div className="wrapper_indent">
+						<div className="form-group">
 							<label>Menu Category</label>
-							<input type="text" name="menu_category" class="form-control" placeholder="EX. Main courses"/>
+							<input type="text" name="menu_category" className="form-control" placeholder="EX. Main courses"/>
 						</div>
 
-						<div class="menu-item-section clearfix">
+						<div className="menu-item-section clearfix">
 							<h4>Menu item #1</h4>
-							<div><a href="#0"><i class="icon_plus_alt"></i></a><a href="#0"><i class="icon_minus_alt"></i></a>
+							<div><a href="#0"><i className="icon_plus_alt"></i></a><a href="#0"><i className="icon_minus_alt"></i></a>
 							</div>
 						</div>
 
-						<div class="strip_menu_items">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="menu-item-pic dropzone">
+						<div className="strip_menu_items">
+							<div className="row">
+								<div className="col-md-3">
+									<div className="menu-item-pic dropzone">
 										<input name="file" type="file"/>
-										<div class="dz-default dz-message"><span>Click or Drop<br/>Images Here</span>
+										<div className="dz-default dz-message"><span>Click or Drop<br/>Images Here</span>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-9">
-									<div class="row">
-										<div class="col-md-8">
-											<div class="form-group">
+								<div className="col-md-9">
+									<div className="row">
+										<div className="col-md-8">
+											<div className="form-group">
 												<label>Title</label>
-												<input type="text" name="menu_item_title" class="form-control"/>
+												<input type="text" name="menu_item_title" className="form-control"/>
 											</div>
 										</div>
-										<div class="col-md-4">
-											<div class="form-group">
+										<div className="col-md-4">
+											<div className="form-group">
 												<label>Price</label>
-												<input type="text" name="menu_item_title_price" class="form-control"/>
+												<input type="text" name="menu_item_title_price" className="form-control"/>
 											</div>
 										</div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<label>Short description</label>
-										<input type="text" name="menu_item_description" class="form-control"/>
+										<input type="text" name="menu_item_description" className="form-control"/>
 									</div>
 
-									<div class="form-group">
+									<div className="form-group">
 										<label>Item options</label>
-                                        <div class="table-responsive">
-										<table class="table table-striped notifications">
+                                        <div className="table-responsive">
+										<table className="table table-striped notifications">
 											<tbody>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $3.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $3.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Medium"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Medium"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_10" checked class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_10" class="icheck" value="radio"/>Radio</label>
+															<input type="radio" name="option_item_settings_10" checked className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_10" className="icheck" value="radio"/>Radio</label>
 													</td>
 												</tr>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $5.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $5.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Large"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Large"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_11" class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_11" class="icheck" value="radio" checked/>Radio</label>
+															<input type="radio" name="option_item_settings_11" className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_11" className="icheck" value="radio" checked/>Radio</label>
 													</td>
 												</tr>
 											</tbody>
@@ -328,37 +328,37 @@ function Section2Admin() {
                                         </div>
 									</div>
 
-									<div class="form-group">
+									<div className="form-group">
 										<label>Item ingredients</label>
-                                        <div class="table-responsive">
-										<table class="table table-striped notifications">
+                                        <div className="table-responsive">
+										<table className="table table-striped notifications">
 											<tbody>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $2.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $2.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Extra tomato"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Extra tomato"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_12" checked class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_12" class="icheck" value="radio"/>Radio</label>
+															<input type="radio" name="option_item_settings_12" checked className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_12" className="icheck" value="radio"/>Radio</label>
 													</td>
 												</tr>
 												<tr>
-													<td className="admin_width_20">
-														<input type="text" class="form-control" placeholder="+ $5.50"/>
+													<td classNameName="admin_width_20">
+														<input type="text" className="form-control" placeholder="+ $5.50"/>
 													</td>
-													<td className="admin_width_50">
-														<input type="text" class="form-control" placeholder="Ex. Extra Pepper"/>
+													<td classNameName="admin_width_50">
+														<input type="text" className="form-control" placeholder="Ex. Extra Pepper"/>
 													</td>
-													<td className="admin_width_30">
+													<td classNameName="admin_width_30">
 														<label>
-															<input type="radio" name="option_item_settings_13" class="icheck" value="checkbox"/>Checkbox</label>
-														<label class="margin_left">
-															<input type="radio" name="option_item_settings_13" class="icheck" value="radio" checked/>Radio</label>
+															<input type="radio" name="option_item_settings_13" className="icheck" value="checkbox"/>Checkbox</label>
+														<label className="margin_left">
+															<input type="radio" name="option_item_settings_13" className="icheck" value="radio" checked/>Radio</label>
 													</td>
 												</tr>
 											</tbody>
@@ -370,10 +370,10 @@ function Section2Admin() {
 						</div>
 					</div>
                     
-					<hr class="styled_2"/>
+					<hr className="styled_2"/>
                     
-					<div class="wrapper_indent">
-						<div class="add_more_cat"><a href="#0" class="btn_1">Save now</a> <a href="#0" class="btn_1">Add menu category</a> </div>
+					<div className="wrapper_indent">
+						<div className="add_more_cat"><a href="#0" className="btn_1">Save now</a> <a href="#0" className="btn_1">Add menu category</a> </div>
 					</div>
                     
 				</section>

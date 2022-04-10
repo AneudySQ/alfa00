@@ -3,14 +3,14 @@
 .icheckbox_flat-grey,
 .iradio_flat-grey {
     display: inline-block;
-    *display: inline;
+    display: inline;
     vertical-align: middle;
     margin: 0;
     padding: 0;
     width: 20px;
     height: 20px;
-/*     background: url(grey.png) no-repeat;
- */    border: none;
+    background: url(/./images/img/grey.png) no-repeat;
+   border: none;
     cursor: pointer;
 }
 
