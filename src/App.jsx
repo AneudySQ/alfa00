@@ -1,4 +1,3 @@
-
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Navbar from './componets/Navbar';
 import Home from './componets/Pages/Home';
@@ -14,7 +13,7 @@ function App() {
     <>
     <BrowserRouter>
       <Navbar />
-
+      
        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/GrildList" element={<GrildList />} />

@@ -1,35 +1,39 @@
-import React from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 
-export default function App() {
-    return (
-        <div style={{
-            display: 'block',
-            width: 700,
-            padding: 30
-        }}>
-            <h4>React-Bootstrap Modal Component</h4>
-            <Modal.Dialog>
-                <Modal.Header closeButton>
-                    <Modal.Title>
-                        Sample Modal Heading
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <p>
-                        This is the sample text for our Modal
-                    </p>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="primary">
-                        Save changes
-                    </Button>
-                    <Button variant="secondary">
-                        Close
-                    </Button>
-                </Modal.Footer>
-            </Modal.Dialog>
-        </div>
-    );
+import React, { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
+
+function App() {
+  const [showModal, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <div
+        className="d-flex align-items-center justify-content-center"
+        style={{ height: "100vh" }}
+      >
+        <Button variant="primary" onClick={handleShow}>
+          Launch demo modal
+        </Button>
+      </div>
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
 }
+
+export default App;

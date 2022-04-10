@@ -20,7 +20,7 @@ function Admin() {
         <Tab eventKey="home" className='icon-profile' title="Main info">
           <Section1Admin />
         </Tab>
-        <Tab eventKey="profile" className='iconos-admin'  title="Menu">
+        <Tab eventKey="profile" className='iconos-admin '  title="Menu">
           <Section2Admin />
         </Tab>
         <Tab eventKey="contact" className='icon-profile' title="Settings" >
