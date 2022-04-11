@@ -67,7 +67,6 @@ const Navbar = () => {
                             onClick={closeMenu}></NavLink >
                     </li>
 
-        ,
                     
                     </ul>
             </nav>
