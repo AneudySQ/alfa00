@@ -1350,7 +1350,7 @@ ul.opening_list li span {
   position: relative;
   top: -30px;
 }
-.form-control.form-white {
+.form-contro .form-white {
   color: #fff;
   font-size: 16px;
   height: 42px;
@@ -1679,6 +1679,7 @@ select.form-control.form-white {
 .form-control {
   color: #333;
   height: 40px;
+  width:70%;
   border-radius: 3px;
   box-shadow: none;
   border: 1px solid #ddd;

@@ -46,7 +46,13 @@ function InfmacionDireccionAdmin() {
 							<div className="col-md-3">
 								<div className="form-group">
 									<label>Postal code</label>
-									<input type="text" id="postal_code" name="postal_code" className="form-control"/>
+									<input 
+									type="text" 
+									id="postal_code" 
+									name="postal_code" 
+									className="form-control"
+									
+									/>
 								</div>
 							</div>
 						</div>
