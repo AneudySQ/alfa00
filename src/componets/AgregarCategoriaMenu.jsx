@@ -1,8 +1,12 @@
 import React from 'react'
+import MenuItemCategoria from "./MenuItemCategoria";
+import shortid from 'shortid'
+
 
 function AgregarCategoriaMenu() {
 
     const [agregarCategoria, setAgregarCategoria] = React.useState('')
+    const [itemMenu, setItemMenu] = React.useState([])
 
     const agregarCategoriaBtn = e => {
         e.preventDefault()
@@ -12,6 +16,11 @@ function AgregarCategoriaMenu() {
         }
         
         console.log(agregarCategoria)
+
+        setItemMenu ([
+            ...itemMenu,
+            {id: shortid.generate(), nombreMenu: agregarCategoria }
+        ])
     }
 
     return (
@@ -24,6 +33,7 @@ function AgregarCategoriaMenu() {
                     className="form-control col-6"
                     placeholder="Ingrese una categoria"
                     onChange={e => setAgregarCategoria(e.target.value)}
+                    value={agregarCategoria}
                 />
 
                 <button
@@ -33,6 +43,16 @@ function AgregarCategoriaMenu() {
                     Agregar Categoria
                 </button>
             </form >
+
+            {
+                itemMenu.map(item =>(
+                    <MenuItemCategoria />
+                ))
+
+            }
+
+
+            
         </>
     )
 }

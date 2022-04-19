@@ -1,6 +1,6 @@
 import React from "react";
 import AgregarCategoriaMenu from "./AgregarCategoriaMenu";
-import ItemPlatillo from "./ItemPlatillo";
+//import StripMenuItems from "./StripMenuItems";
 
 function MenuEdicion() {
   return (
@@ -19,7 +19,6 @@ function MenuEdicion() {
 
         <div className="wrapper_indent">
           <AgregarCategoriaMenu />
-          <ItemPlatillo />
         </div>
 
         <hr className="styled_2" />
