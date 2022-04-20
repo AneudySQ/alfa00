@@ -2,7 +2,14 @@ import React from "react";
 //import StripMenuItems from "./StripMenuItems";
 
 
-function MenuItemCategoria() {
+function MenuItemCategoria({item}) {
+
+
+  const eliminarItem = id => {
+    console.log(id)
+
+  }
+
   return (
     <>
       <div className="menu-item-section clearfix">
@@ -12,7 +19,9 @@ function MenuItemCategoria() {
             <i className="icon_plus_alt"></i>
           </a>
           <a href="#0">
-            <i className="icon_minus_alt"></i>
+            <button className="icon_minus_alt"
+            onClick={() => eliminarItem(item.id)}
+            ></button>
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuItemCategoria from "./MenuItemCategoria";
+//import MenuItemCategoria from "./MenuItemCategoria";
 import shortid from 'shortid'
 
 
@@ -14,13 +14,21 @@ function AgregarCategoriaMenu() {
         if (!agregarCategoria.trim()) {
             console.log('Elelemto Vacio')
         }
-        
+
         console.log(agregarCategoria)
 
-        setItemMenu ([
+        setItemMenu([
             ...itemMenu,
-            {id: shortid.generate(), nombreMenu: agregarCategoria }
+            { id: shortid.generate(), nombreMenu: agregarCategoria }
         ])
+    }
+
+    const eliminarCategoria = id =>{
+        console.log(id)
+
+        const arrayFiltrado = itemMenu.filter(item => item.id !== id)
+        setItemMenu(arrayFiltrado)
+
     }
 
     return (
@@ -45,14 +53,32 @@ function AgregarCategoriaMenu() {
             </form >
 
             {
-                itemMenu.map(item =>(
-                    <MenuItemCategoria />
+                itemMenu.map(item => (
+
+                        <div className="menu-item-section clearfix">
+                            <h4>Menu item #1</h4>
+                            <div>
+                                <a href="#0">
+                                    <i className="icon_plus_alt"></i>
+                                </a>
+
+                                <a href="#0">
+                                    <button 
+                                    className="icon_minus_alt"
+                                    onClick={() => eliminarCategoria(item.id)}
+
+                                    >
+                                              
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                 ))
 
             }
 
 
-            
+
         </>
     )
 }
