@@ -17,7 +17,7 @@ function MenuEdicion() {
           </p>
         </div>
 
-        <div className="wrapper_indent">
+        <div className="wrapper_indent form-group row ">
           <AgregarCategoriaMenu />
         </div>
 

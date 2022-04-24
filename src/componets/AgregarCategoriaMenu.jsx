@@ -69,7 +69,7 @@ function AgregarCategoriaMenu() {
                 error ? <span className="text-danger">{error}</span> : null
             }
 
-            <form className="form-group row" onSubmit={modoEdicion ? editarNombre : agregarCategoriaBtn}>
+            <form className="form-group  row" onSubmit={modoEdicion ? editarNombre : agregarCategoriaBtn}>
                 <label>
                     {
                         modoEdicion ? (<h5 className=" text-warning">Editar Nombre de la categoria</h5>) : (<h5 className="text-success">Agregar Categoria</h5>)
@@ -80,7 +80,7 @@ function AgregarCategoriaMenu() {
                 <input
                     type="text"
                     className="form-control col-6"
-                    placeholder="Ingrese una categoria"
+                    placeholder="Ejemplo: Desayudo"
                     onChange={e => setAgregarCategoria(e.target.value)}
                     value={agregarCategoria}
                 />
@@ -106,7 +106,7 @@ function AgregarCategoriaMenu() {
                 ) :(
 
                         itemMenu.map((item) => (
-            <li className="menu-item-section clearfix" key={item.id}>
+                            <li className="menu-item-section clearfix form-group" key={item.id}>
                 <h4>{item.nombreCategoria}</h4>
                 <div>
 
@@ -123,9 +123,9 @@ function AgregarCategoriaMenu() {
                         <button
                             className="btn btn-danger "
                             onClick={() => eliminarCategoria(item.id)}
-                        >Eliminar categoria</button>
+                        >Eliminar </button>
                     </a>
-                </div>
+                </div >
             </li>
             ))
             )
