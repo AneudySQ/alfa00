@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InputAgregarCategoria = ({ BtnEditarNombre, BtnAgregarCategoria, setAgregarCategoriaTarget, agregarCategoria,  ...props}) => {
+const InputAgregarCategoria = ({ BtnEditarNombre, BtnAgregarCategoria, setAgregarCategoriaTarget, agregarCategoria,   ...props}) => {
   return (
     <>
       <form className="form-group  row" onSubmit={props.modoEdicion ? props.editarNombre : props.agregarCategoriaBtn}>
