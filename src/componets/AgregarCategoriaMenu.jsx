@@ -1,8 +1,12 @@
 import React from "react";
 //import MenuItemCategoria from "./MenuItemCategoria";
 import shortid from "shortid";
+import BtnAgregarCategoria from "./BtnAgregarCategoria";
+import { BtnEditarNombre } from "./BtnEditarNombre";
+import BtnEliminarCategoria from "./BtnEliminarCategoria";
+import InputAgregarCategoria from "./InputAgregarCategoria";
 
-function AgregarCategoriaMenu() {
+function AgregarCategoriaMenu(props) {
 
     const [agregarCategoria, setAgregarCategoria] = React.useState('')
     const [itemMenu, setItemMenu] = React.useState([])
@@ -28,6 +32,7 @@ function AgregarCategoriaMenu() {
         ])
         setError(null)
     }
+
 
     const eliminarCategoria = (id) => {
         console.log(id);
@@ -69,67 +74,43 @@ function AgregarCategoriaMenu() {
                 error ? <span className="text-danger">{error}</span> : null
             }
 
-            <form className="form-group  row" onSubmit={modoEdicion ? editarNombre : agregarCategoriaBtn}>
-                <label>
-                    {
-                        modoEdicion ? (<h5 className=" text-warning">Editar Nombre de la categoria</h5>) : (<h5 className="text-success">Agregar Categoria</h5>)
-                    }
-                </label>
-
-
-                <input
-                    type="text"
-                    className="form-control col-6"
-                    placeholder="Ejemplo: Desayudo"
-                    onChange={e => setAgregarCategoria(e.target.value)}
-                    value={agregarCategoria}
-                />
-
-                {
-                    modoEdicion ? (
-                        <button className="btn-warning col-3 left mx-2 " type="submit" >Editar nombre</button>
-
-                    ) : (
-                        <button className="btn_1 col-3 left mx-2 " type="submit" >Agregar Categoria</button>
-
-                    )
-
-                }
-
-
-            </form>
+            <InputAgregarCategoria 
+                BtnEditarNombre={BtnEditarNombre}
+                BtnAgregarCategoria={BtnAgregarCategoria}
+                modoEdicion={modoEdicion}
+                editarNombre={editarNombre}
+                agregarCategoriaBtn={agregarCategoriaBtn}
+                setAgregarCategoriaTarget={e => setAgregarCategoria(e.target.value)}
+                value={agregarCategoria}
+            />
 
             {
-                itemMenu.length === 0 ?(
+                itemMenu.length === 0 ? (
 
                     <h1 className="text-center text-secondary">No hay categorias</h1>
-                ) :(
+                ) : (
+                    itemMenu.map((item) => (
+                        <li className="menu-item-section clearfix form-group container" key={item.id}>
+                            <h4>{item.nombreCategoria}</h4>
+                            <div>
 
-                        itemMenu.map((item) => (
-                            <li className="menu-item-section clearfix form-group" key={item.id}>
-                <h4>{item.nombreCategoria}</h4>
-                <div>
+                                <a href="#0">
+                                    <button
+                                        className="btn btn-warning "
+                                        onClick={() => editar(item)}
+                                    >
+                                        Editar
+                                    </button>
+                                </a>
 
-                    <a href="#0">
-                        <button
-                            className="btn btn-warning "
-                            onClick={() => editar(item)}
-                        >
-                            Editar
-                        </button>
-                    </a>
-
-                    <a href="#0">
-                        <button
-                            className="btn btn-danger "
-                            onClick={() => eliminarCategoria(item.id)}
-                        >Eliminar </button>
-                    </a>
-                </div >
-            </li>
-            ))
-            )
-            
+                                <BtnEliminarCategoria
+                                    eliminarCategoria={eliminarCategoria}
+                                    EliminarCategoriaItemId={() => eliminarCategoria(item.id)}
+                                />
+                            </div >
+                        </li>
+                    ))
+                )
             }
         </>
     );

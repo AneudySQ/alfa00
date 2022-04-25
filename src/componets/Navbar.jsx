@@ -60,6 +60,11 @@ const Navbar = () => {
                             style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
                             onClick={closeMenu}>Admin</NavLink >
                     </li>
+                    <li className='nav-item'>
+                        <NavLink to='/App0'
+                            style={({ isActive }) => ({ color: isActive ? ' #ff5733 ' : '' })}
+                            onClick={closeMenu}>App0</NavLink >
+                    </li>
 
                     <li className='nav-item'>
                         <NavLink to='/'
