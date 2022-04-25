@@ -83,6 +83,7 @@ function AgregarCategoriaMenu(props) {
                 setAgregarCategoriaTarget={e => setAgregarCategoria(e.target.value)}
                 value={agregarCategoria}
             />
+            
 
             {
                 itemMenu.length === 0 ? (
