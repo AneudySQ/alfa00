@@ -14,9 +14,8 @@ const InputAgregarCategoria = ({ BtnEditarNombre, BtnAgregarCategoria, setAgrega
         <input
           type="text"
           className="form-control col-6"
-          placeholder="Ejemplo: Desayudo"
-          onClick={setAgregarCategoriaTarget}
-          agregarCategoria={props.agregarCategoria}
+          placeholder="Ingrese una categoria"
+          onChange={setAgregarCategoriaTarget}
           value={agregarCategoria}
 
 
