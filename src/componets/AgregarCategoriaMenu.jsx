@@ -1,10 +1,9 @@
 import React from "react";
-//import MenuItemCategoria from "./MenuItemCategoria";
 import shortid from "shortid";
 import BtnAgregarCategoria from "./BtnAgregarCategoria";
 import { BtnEditarNombre } from "./BtnEditarNombre";
-import BtnEliminarCategoria from "./BtnEliminarCategoria";
 import InputAgregarCategoria from "./InputAgregarCategoria";
+import MenuItemCategoria from "./MenuItemCategoria";
 
 function AgregarCategoriaMenu(props) {
 
@@ -74,7 +73,7 @@ function AgregarCategoriaMenu(props) {
                 error ? <span className="text-danger">{error}</span> : null
             }
 
-            <InputAgregarCategoria 
+            <InputAgregarCategoria
                 BtnEditarNombre={BtnEditarNombre}
                 BtnAgregarCategoria={BtnAgregarCategoria}
                 modoEdicion={modoEdicion}
@@ -83,7 +82,7 @@ function AgregarCategoriaMenu(props) {
                 setAgregarCategoriaTarget={e => setAgregarCategoria(e.target.value)}
                 value={agregarCategoria}
             />
-            
+
 
             {
                 itemMenu.length === 0 ? (
@@ -91,25 +90,12 @@ function AgregarCategoriaMenu(props) {
                     <h1 className="text-center text-secondary">No hay categorias</h1>
                 ) : (
                     itemMenu.map((item) => (
-                        <li className="menu-item-section clearfix form-group container" key={item.id}>
-                            <h4>{item.nombreCategoria}</h4>
-                            <div>
 
-                                <a href="#0">
-                                    <button
-                                        className="btn btn-warning "
-                                        onClick={() => editar(item)}
-                                    >
-                                        Editar
-                                    </button>
-                                </a>
-
-                                <BtnEliminarCategoria
-                                    eliminarCategoria={eliminarCategoria}
-                                    EliminarCategoriaItemId={() => eliminarCategoria(item.id)}
-                                />
-                            </div >
-                        </li>
+                        <MenuItemCategoria
+                            item={item}
+                            editar={editar}
+                            eliminarCategoria={eliminarCategoria}
+                        />
                     ))
                 )
             }

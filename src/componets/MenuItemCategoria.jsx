@@ -1,33 +1,34 @@
-import React from "react";
-//import StripMenuItems from "./StripMenuItems";
+import React from 'react'
 
-
-function MenuItemCategoria({item}) {
-
-
-  const eliminarItem = id => {
-    console.log(id)
-
-  }
-
+const MenuItemCategoria = ({ item, editar,eliminarCategoria}) => {
   return (
     <>
-      <div className="menu-item-section clearfix">
-        <h4>Menu item #1</h4>
+      <li className="menu-item-section clearfix form-group container" key={item.id}>
+        <h4>{item.nombreCategoria}</h4>
         <div>
+
           <a href="#0">
-            <i className="icon_plus_alt"></i>
+            <button
+              className="btn btn-warning "
+              onClick={() => editar(item)}
+            >
+              Editar
+            </button>
           </a>
+
           <a href="#0">
-            <button className="icon_minus_alt"
-            onClick={() => eliminarItem(item.id)}
-            ></button>
+            <button
+              className="btn btn-danger "
+              onClick={() => eliminarCategoria(item.id)}
+            >
+              Eliminar
+            </button>
           </a>
-        </div>
-      </div>
+        </div >
+      </li>
 
     </>
-  );
+  )
 }
 
-export default MenuItemCategoria;
+export default MenuItemCategoria
