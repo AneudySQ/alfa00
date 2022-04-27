@@ -80,7 +80,7 @@ function AgregarCategoriaMenu(props) {
                 editarNombre={editarNombre}
                 agregarCategoriaBtn={agregarCategoriaBtn}
                 setAgregarCategoriaTarget={e => setAgregarCategoria(e.target.value)}
-                value={agregarCategoria}
+                agregarCategoria={agregarCategoria}
             />
 
 
