@@ -5,7 +5,7 @@ import { BtnEditarNombre } from "./BtnEditarNombre";
 import InputAgregarCategoria from "./InputAgregarCategoria";
 import MenuItemCategoria from "./MenuItemCategoria";
 
-function AgregarCategoriaMenu(props) {
+function AgregarCategoriaMenu() {
 
     const [agregarCategoria, setAgregarCategoria] = React.useState('')
     const [itemMenu, setItemMenu] = React.useState([])

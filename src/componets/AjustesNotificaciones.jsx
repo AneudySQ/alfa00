@@ -7,13 +7,13 @@ function AjustesNotificaciones() {
 								<table className="table table-striped notifications">
 									<tbody>
 										<tr>
-											<td classNameName='admin_width_5'>
+											<td className='admin_width_5'>
 												<i className="icon_pencil-edit_alt"></i>
 											</td>
-											<td classNameName='admin_width_65'>
+											<td className='admin_width_65'>
 												New orders
 											</td>
-											<td classNameName='admin_width_35'>
+											<td className='admin_width_35'>
 												<label>
 													<input type="checkbox" name="option_1_settings" checked className="icheck" value="yes"/>Yes</label>
 												<label className="margin_left">
