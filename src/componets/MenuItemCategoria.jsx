@@ -1,4 +1,5 @@
 import React from 'react'
+import Item from './Item'
 
 const MenuItemCategoria = ({ item, editar, eliminarCategoria }) => {
   return (
@@ -29,6 +30,9 @@ const MenuItemCategoria = ({ item, editar, eliminarCategoria }) => {
       <div className="agregar_nuevo_item  ">
         <button class="icon_plus_alt2 btn"></button>
             <p>Agrega un elemento a tu categoria</p>
+      </div>
+      <div class="col-md-9">
+          <Item />
       </div>
     </>
   )
