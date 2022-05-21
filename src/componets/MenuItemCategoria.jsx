@@ -1,7 +1,6 @@
 import React from 'react'
-import StripMenuItems from './StripMenuItems'
 
-const MenuItemCategoria = ({ item, editar,eliminarCategoria}) => {
+const MenuItemCategoria = ({ item, editar, eliminarCategoria }) => {
   return (
     <>
       <li className="menu-item-section clearfix form-group container" key={item.id}>
@@ -27,7 +26,12 @@ const MenuItemCategoria = ({ item, editar,eliminarCategoria}) => {
           </a>
         </div >
       </li>
-      <StripMenuItems />
+      <div className="agregar_nuevo_item  ">
+        <button class="icon_plus_alt2 btn"></button>
+            <p>Agrega un elemento a tu categoria</p>
+      </div>
+      <div class="col-md-9">
+      </div>
     </>
   )
 }

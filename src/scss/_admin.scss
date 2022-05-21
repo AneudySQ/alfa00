@@ -1,5 +1,5 @@
 /*-------- Tabs --------*/
-/* .admin_width_20{
+.admin_width_20{
 	width:20%
 }
 .admin_width_50{
@@ -21,7 +21,7 @@
 .admin_height_200px{
 	height: 200px;
 }
- */
+ 
 
 
 .tabs {
@@ -208,7 +208,7 @@ hr.styled_2{
 	display:inline-block;
 }
 .strip_menu_items{
-	margin-bottom:15px;
+	margin-bottom:15px 15px 15px 15px;
 }
 .strip_menu_items h3{
 	font-size:16px;
