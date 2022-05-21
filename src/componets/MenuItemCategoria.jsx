@@ -1,4 +1,5 @@
 import React from 'react'
+import StripMenuItems from './StripMenuItems'
 
 const MenuItemCategoria = ({ item, editar,eliminarCategoria}) => {
   return (
@@ -26,7 +27,7 @@ const MenuItemCategoria = ({ item, editar,eliminarCategoria}) => {
           </a>
         </div >
       </li>
-
+      <StripMenuItems />
     </>
   )
 }

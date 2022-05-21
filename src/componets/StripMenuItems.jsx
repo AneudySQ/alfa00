@@ -14,16 +14,10 @@ function StripMenuItems() {
 					</div>
 					<div className="col-md-9">
 						<div className="row">
-							<div className="col-md-8">
+							<div className="col-md-9">
 								<div className="form-group">
 									<label>Title</label>
 									<input type="text" name="menu_item_title" className="form-control" />
-								</div>
-							</div>
-							<div className="col-md-4">
-								<div className="form-group">
-									<label>Price</label>
-									<input type="text" name="menu_item_title_price" className="form-control" />
 								</div>
 							</div>
 						</div>
