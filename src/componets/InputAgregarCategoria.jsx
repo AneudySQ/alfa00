@@ -2,7 +2,7 @@ import React from 'react'
 
 const InputAgregarCategoria = ({ BtnEditarNombre, BtnAgregarCategoria, setAgregarCategoriaTarget, agregarCategoria,   ...props}) => {
   return (
-    <>
+    < div className='col-md-12 m-0 row justify-content-center align-content-center '>
       <form className="form-group  row" onSubmit={props.modoEdicion ? props.editarNombre : props.agregarCategoriaBtn}>
         <label>
           {
@@ -34,7 +34,7 @@ const InputAgregarCategoria = ({ BtnEditarNombre, BtnAgregarCategoria, setAgrega
 
       </form>
 
-    </>
+    </div>
   )
 }
 
