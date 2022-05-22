@@ -3,7 +3,7 @@ import React from 'react'
 function StripMenuItems() {
 
   return (
-    <div className='cuadro'>
+    <div className='cuadro col-md-10 m-0 row justify-content-center align-content-center'>
 
         <div class="menu-item-section clearfix">
           <h4>1</h4>
@@ -22,21 +22,15 @@ function StripMenuItems() {
             </div>
             <div class="col-md-9">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-10">
                   <div class="form-group">
-                    <label>Title</label>
+                    <label>Titulo</label>
                     <input type="text" name="menu_item_title" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>Price</label>
-                    <input type="text" name="menu_item_title_price" class="form-control" />
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <label>Short description</label>
+                <label>Pequeña descripcion</label>
                 <input type="text" name="menu_item_description" class="form-control" />
               </div>
 
